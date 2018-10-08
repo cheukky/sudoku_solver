@@ -1,5 +1,6 @@
 language: java
 jdk:
   - openjdk7
-
-script: ant build
+before_install:
+  - cd java
+script: ant test
